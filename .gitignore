@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.local
+.env
+.env.*
+!.env.example
+
+*.tsbuildinfo
+
+.preview/
+
+# Reproducible frame extraction; retain the clip, provenance, and comparisons.
+reference/frame_*.png
+
+__pycache__/

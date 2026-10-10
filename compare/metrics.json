@@ -1,0 +1,1161 @@
+{
+  "reference": {
+    "origin": "Browser capture of original public source, not Trucknex implementation",
+    "url": "https://github.com/shafiei/truck-order-animation",
+    "commit": "a92b4a1c17d309ea3b39135a5292d9331bb20cef",
+    "width": 880,
+    "height": 440,
+    "fps": 30,
+    "frame_count": 330,
+    "duration_ms": 11000,
+    "trigger_ms": 1000,
+    "pill": {
+      "x": 218,
+      "y": 161,
+      "width": 420,
+      "height": 110.25,
+      "scale": 1.75
+    },
+    "published_gif": "original.gif"
+  },
+  "referenceFrameOrigins": {
+    "1": "Independent source-browser PNG capture",
+    "37": "Independent source-browser PNG capture",
+    "46": "Independent source-browser PNG capture",
+    "61": "Independent source-browser PNG capture",
+    "76": "Independent source-browser PNG capture",
+    "106": "Independent source-browser PNG capture",
+    "151": "Independent source-browser PNG capture",
+    "181": "Independent source-browser PNG capture",
+    "211": "Independent source-browser PNG capture",
+    "226": "Independent source-browser PNG capture",
+    "245": "Independent source-browser PNG capture",
+    "250": "Independent source-browser PNG capture",
+    "255": "Independent source-browser PNG capture",
+    "262": "Independent source-browser PNG capture"
+  },
+  "frames": [
+    {
+      "frame": 1,
+      "timeMs": 0.0,
+      "reference": {
+        "trailer_x": 680,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 1,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 683.5,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 683.5,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 680,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 683.5,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 683.5,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 1,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": null,
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0,
+      "trailerPaintErrorPx": null,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.0,
+      "lowerDoorHingeErrorPx": 0.0,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 37,
+      "timeMs": 1200.0,
+      "reference": {
+        "trailer_x": 582.8646140258834,
+        "trailer_y": 180.25,
+        "parcel_x": 209.8457413948788,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0.07517598811599946,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 586.3646140258834,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 586.3646140258834,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 582.8920097351074,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 209.8423124551773,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 586.3920097351074,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 586.3920097351074,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0.075163,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 583,
+        "y": 180,
+        "visible_width": 52
+      },
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0.027395709224038,
+      "trailerPaintErrorPx": -0.10799026489257812,
+      "parcelSourceErrorPx": -0.003428939701478839,
+      "upperDoorHingeErrorPx": 0.027395709224038,
+      "lowerDoorHingeErrorPx": 0.027395709224038,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": -1.2988115999465477e-05,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 46,
+      "timeMs": 1500.0,
+      "reference": {
+        "trailer_x": 416.00928548457756,
+        "trailer_y": 180.25,
+        "parcel_x": 244.3457445613388,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -32.87542947279131,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 419.50928548457756,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 419.50928548457756,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 416.05116844177246,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 244.34284591674805,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 419.55116844177246,
+          "y": 189,
+          "angle": -32.89073679999999
+        },
+        "lowerDoor": {
+          "x": 419.55116844177246,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 416,
+        "y": 181,
+        "visible_width": 105
+      },
+      "referenceParcelPaint": {
+        "x": 245,
+        "y": 198
+      },
+      "trailerSourceErrorPx": 0.04188295719490043,
+      "trailerPaintErrorPx": 0.05116844177246094,
+      "parcelSourceErrorPx": -0.0028986445907435154,
+      "upperDoorHingeErrorPx": 0.04188295719490043,
+      "lowerDoorHingeErrorPx": 0.04188295719490043,
+      "upperDoorAngleErrorDeg": -0.015307327208681443,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 61,
+      "timeMs": 2000.0,
+      "reference": {
+        "trailer_x": 351.0,
+        "trailer_y": 180.25,
+        "parcel_x": 251.25000000000054,
+        "parcel_y": 197.75,
+        "upperDoorAngle": 31.948927474411633,
+        "lowerDoorAngle": -13.978495214772835,
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 354.5,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 354.5,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 351,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 251.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 354.5,
+          "y": 189,
+          "angle": 31.9493329
+        },
+        "lowerDoor": {
+          "x": 354.5,
+          "y": 243.25,
+          "angle": -14.0035484
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 351,
+        "y": 181,
+        "visible_width": 105
+      },
+      "referenceParcelPaint": {
+        "x": 252,
+        "y": 198
+      },
+      "trailerSourceErrorPx": 0.0,
+      "trailerPaintErrorPx": 0,
+      "parcelSourceErrorPx": -5.400124791776761e-13,
+      "upperDoorHingeErrorPx": 0.0,
+      "lowerDoorHingeErrorPx": 0.0,
+      "upperDoorAngleErrorDeg": 0.0004054255883687574,
+      "lowerDoorAngleErrorDeg": -0.02505318522716493,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 76,
+      "timeMs": 2500.0,
+      "reference": {
+        "trailer_x": 351,
+        "trailer_y": 180.25,
+        "parcel_x": 323.80865201478116,
+        "parcel_y": 197.75,
+        "upperDoorAngle": 31.99999999999948,
+        "lowerDoorAngle": -32,
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 354.5,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 354.5,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 351,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 323.82258892059326,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 354.5,
+          "y": 189,
+          "angle": 32
+        },
+        "lowerDoor": {
+          "x": 354.5,
+          "y": 243.25,
+          "angle": -32
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 351,
+        "y": 181,
+        "visible_width": 105
+      },
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0,
+      "trailerPaintErrorPx": 0,
+      "parcelSourceErrorPx": 0.01393690581210194,
+      "upperDoorHingeErrorPx": 0.0,
+      "lowerDoorHingeErrorPx": 0.0,
+      "upperDoorAngleErrorDeg": 5.186961971048731e-13,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 106,
+      "timeMs": 3500.0,
+      "reference": {
+        "trailer_x": 351,
+        "trailer_y": 180.25,
+        "parcel_x": 377.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -87.98384601558374,
+        "lowerDoorAngle": 74.57177591614906,
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 354.5,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 354.5,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 351,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 377.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 354.5,
+          "y": 189,
+          "angle": -87.98229829999998
+        },
+        "lowerDoor": {
+          "x": 354.5,
+          "y": 243.25,
+          "angle": 74.5463468
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 351,
+        "y": 181,
+        "visible_width": 105
+      },
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0,
+      "trailerPaintErrorPx": 0,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.0,
+      "lowerDoorHingeErrorPx": 0.0,
+      "upperDoorAngleErrorDeg": 0.0015477155837544387,
+      "lowerDoorAngleErrorDeg": -0.02542911614906984,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 151,
+      "timeMs": 5000.0,
+      "reference": {
+        "trailer_x": 456.0,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 1,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 459.5,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 459.5,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 456,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 459.5,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 459.5,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 1,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 456,
+        "y": 181,
+        "visible_width": 105
+      },
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0.0,
+      "trailerPaintErrorPx": 0,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.0,
+      "lowerDoorHingeErrorPx": 0.0,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 181,
+      "timeMs": 6000.0,
+      "reference": {
+        "trailer_x": 287.49528860717714,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 1,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 290.99528860717714,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 290.99528860717714,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 287.5220251083374,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 291.0220251083374,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 291.0220251083374,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 1,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 288,
+        "y": 181,
+        "visible_width": 104
+      },
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0.02673650116025783,
+      "trailerPaintErrorPx": -0.47797489166259766,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.02673650116025783,
+      "lowerDoorHingeErrorPx": 0.02673650116025783,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 211,
+      "timeMs": 7000.0,
+      "reference": {
+        "trailer_x": 246.0,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 1,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 249.5,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 249.5,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 246,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 249.5,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 249.5,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 1,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 246,
+        "y": 181,
+        "visible_width": 105
+      },
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0.0,
+      "trailerPaintErrorPx": 0,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.0,
+      "lowerDoorHingeErrorPx": 0.0,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 226,
+      "timeMs": 7500.0,
+      "reference": {
+        "trailer_x": 495.9242458286907,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0.9999999999999958,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 499.4242458286907,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 499.4242458286907,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 495.97226333618164,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 499.47226333618164,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 499.47226333618164,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 1,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": {
+        "x": 496,
+        "y": 181,
+        "visible_width": 105
+      },
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0.048017507490953903,
+      "trailerPaintErrorPx": -0.027736663818359375,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.048017507490953903,
+      "lowerDoorHingeErrorPx": 0.048017507490953903,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 4.218847493575595e-15
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 245,
+      "timeMs": 8133.333333333333,
+      "reference": {
+        "trailer_x": 663.6632338786787,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 0.7411584050294657,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "upperDoorHinge": {
+          "x": 667.1632338786787,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 667.1632338786787,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 663.6950073242188,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 667.1950073242188,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 667.1950073242188,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 0.741087,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": null,
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0.03177344554001138,
+      "trailerPaintErrorPx": null,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.03177344554001138,
+      "lowerDoorHingeErrorPx": 0.03177344554001138,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": -7.14050294656765e-05,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    },
+    {
+      "frame": 250,
+      "timeMs": 8300.0,
+      "reference": {
+        "trailer_x": 675.515092315213,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 1.0,
+        "roadOpacity": 0,
+        "checkProgress": 4.263256414561086e-15,
+        "upperDoorHinge": {
+          "x": 679.015092315213,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 679.015092315213,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 675.5012588500977,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 679.0012588500977,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 679.0012588500977,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 1,
+        "roadOpacity": 0,
+        "checkProgress": 0,
+        "checkOpacity": 0
+      },
+      "referenceTrailerPaint": null,
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": -0.013833465115340005,
+      "trailerPaintErrorPx": null,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.013833465115340005,
+      "lowerDoorHingeErrorPx": 0.013833465115340005,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0.0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": -4.263256414561086e-15
+    },
+    {
+      "frame": 255,
+      "timeMs": 8466.666666666666,
+      "reference": {
+        "trailer_x": 679.8841232081305,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 1,
+        "roadOpacity": 0,
+        "checkProgress": 0.8522827476620725,
+        "upperDoorHinge": {
+          "x": 683.3841232081305,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 683.3841232081305,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 679.8833084106445,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 683.3833084106445,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 683.3833084106445,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 1,
+        "roadOpacity": 0,
+        "checkProgress": 0.8524881016419386,
+        "checkOpacity": 1
+      },
+      "referenceTrailerPaint": null,
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": -0.0008147974859866736,
+      "trailerPaintErrorPx": null,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.0008147974859866736,
+      "lowerDoorHingeErrorPx": 0.0008147974859866736,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0.00020535397986609638
+    },
+    {
+      "frame": 262,
+      "timeMs": 8700.0,
+      "reference": {
+        "trailer_x": 680,
+        "trailer_y": 180.25,
+        "parcel_x": 181.25,
+        "parcel_y": 197.75,
+        "upperDoorAngle": -90,
+        "lowerDoorAngle": 90,
+        "defaultOpacity": 0,
+        "completeOpacity": 1,
+        "roadOpacity": 0,
+        "checkProgress": 1,
+        "upperDoorHinge": {
+          "x": 683.5,
+          "y": 189
+        },
+        "lowerDoorHinge": {
+          "x": 683.5,
+          "y": 243.25
+        }
+      },
+      "live": {
+        "trailer": {
+          "x": 680,
+          "y": 180.25,
+          "width": 105,
+          "height": 71.75
+        },
+        "parcel": {
+          "x": 181.25,
+          "y": 197.75,
+          "width": 36.75,
+          "height": 36.75
+        },
+        "upperDoor": {
+          "x": 683.5,
+          "y": 189,
+          "angle": -90
+        },
+        "lowerDoor": {
+          "x": 683.5,
+          "y": 243.25,
+          "angle": 90
+        },
+        "defaultOpacity": 0,
+        "completeOpacity": 1,
+        "roadOpacity": 0,
+        "checkProgress": 1,
+        "checkOpacity": 1
+      },
+      "referenceTrailerPaint": null,
+      "referenceParcelPaint": null,
+      "trailerSourceErrorPx": 0,
+      "trailerPaintErrorPx": null,
+      "parcelSourceErrorPx": 0.0,
+      "upperDoorHingeErrorPx": 0.0,
+      "lowerDoorHingeErrorPx": 0.0,
+      "upperDoorAngleErrorDeg": 0,
+      "lowerDoorAngleErrorDeg": 0,
+      "opacityErrors": {
+        "defaultOpacity": 0,
+        "completeOpacity": 0,
+        "roadOpacity": 0
+      },
+      "checkProgressError": 0
+    }
+  ],
+  "controls": [
+    {
+      "check": "Scrub applies exact static pose",
+      "passed": true,
+      "detail": "x=351.000"
+    },
+    {
+      "check": "Pause holds pose",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Timeline End reaches exact final endpoint",
+      "passed": true,
+      "detail": "time=11000 ms; completion opacity=1.000"
+    },
+    {
+      "check": "Timeline Home reaches exact initial endpoint",
+      "passed": true,
+      "detail": "time=0 ms; initial label opacity=1.000"
+    },
+    {
+      "check": "Playback speed 0.25\u00d7",
+      "passed": true,
+      "detail": "advanced 125.0 ms in 500.4 ms browser time; drift 0.1 ms (1 ms range step; quantization \u00b10.5 ms)"
+    },
+    {
+      "check": "Playback speed 0.5\u00d7",
+      "passed": true,
+      "detail": "advanced 250.0 ms in 500.3 ms browser time; drift 0.1 ms (1 ms range step; quantization \u00b10.5 ms)"
+    },
+    {
+      "check": "Playback speed 1\u00d7",
+      "passed": true,
+      "detail": "advanced 500.0 ms in 500.3 ms browser time; drift 0.3 ms (1 ms range step; quantization \u00b10.5 ms)"
+    },
+    {
+      "check": "Restart returns to initial phase",
+      "passed": true,
+      "detail": "time=51 ms"
+    },
+    {
+      "check": "Play advances shared clock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Homepage illustrative sequence auto-plays when visible",
+      "passed": true,
+      "detail": "Visible data-playing=true"
+    },
+    {
+      "check": "Homepage visible Pause control stops playback",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Homepage playback suspends offscreen",
+      "passed": true,
+      "detail": "IntersectionObserver state after scrolling to footer"
+    },
+    {
+      "check": "Homepage playback resumes on return",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "responsive": [
+    {
+      "width": 360,
+      "horizontalOverflow": 0,
+      "svg": {
+        "x": 20,
+        "y": 240,
+        "width": 320,
+        "height": 160
+      }
+    },
+    {
+      "width": 390,
+      "horizontalOverflow": 0,
+      "svg": {
+        "x": 20,
+        "y": 240,
+        "width": 350,
+        "height": 175
+      }
+    },
+    {
+      "width": 768,
+      "horizontalOverflow": 0,
+      "svg": {
+        "x": 40,
+        "y": 273,
+        "width": 688,
+        "height": 344
+      }
+    },
+    {
+      "width": 1440,
+      "horizontalOverflow": 0,
+      "svg": {
+        "x": 260,
+        "y": 295,
+        "width": 920,
+        "height": 460
+      }
+    }
+  ],
+  "reducedMotion": {
+    "defaultCompleteOpacity": 1,
+    "playCompleteOpacity": 1,
+    "spatialDriftPx": 0,
+    "passed": true
+  },
+  "performance": {
+    "longTasks": [],
+    "elapsed": 9016.3,
+    "samples": 541,
+    "meanIntervalMs": 16.665988909426986,
+    "medianIntervalMs": 16.699999999999818,
+    "p95IntervalMs": 16.799999999999727,
+    "rafRateHz": 60.00244002528754,
+    "intervalsOver25Ms": 0,
+    "maxIntervalMs": 16.80000000000109,
+    "scope": "Headless Chromium on this machine; rAF scheduling and main-thread long tasks, not a physical-device GPU benchmark."
+  },
+  "pageErrors": []
+}

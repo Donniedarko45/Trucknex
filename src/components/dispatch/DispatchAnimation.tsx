@@ -154,7 +154,6 @@ export default function DispatchAnimation({
   compact = false,
   initialTime = 0,
   frozen = false,
-  showToggle = false,
 }: {
   autoPlay?: boolean;
   loop?: boolean;
@@ -162,7 +161,6 @@ export default function DispatchAnimation({
   compact?: boolean;
   initialTime?: number;
   frozen?: boolean;
-  showToggle?: boolean;
 }) {
   const reduced = !!useReducedMotion();
   const clock = useMotionValue(
@@ -259,27 +257,6 @@ export default function DispatchAnimation({
     >
       <DispatchScene clock={clock} compact={compact} />
       {controls && <DevPanel playback={playback} />}
-      {showToggle && (
-        <div className="dispatch-animation-footer">
-          <span>Illustrative journey</span>
-          <button
-            className="dispatch-motion-toggle"
-            type="button"
-            onClick={playing ? playback.pause : playback.play}
-            disabled={reduced}
-            aria-label={
-              reduced
-                ? "Motion reduced"
-                : playing
-                  ? "Pause animation"
-                  : "Play animation"
-            }
-          >
-            {playing ? <Pause size={12} /> : <Play size={12} />}
-            {reduced ? "Motion reduced" : playing ? "Pause" : "Play"}
-          </button>
-        </div>
-      )}
     </div>
   );
 }

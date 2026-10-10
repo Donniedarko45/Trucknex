@@ -272,7 +272,7 @@ export default function HomePage() {
             </div>
             <div className="hero-dispatch-demo">
               <Suspense fallback={<div className="dispatch-loading-pose" />}>
-                <DispatchAnimation autoPlay loop compact showToggle />
+                <DispatchAnimation autoPlay loop compact />
               </Suspense>
             </div>
             <div className="hero-route-meta">

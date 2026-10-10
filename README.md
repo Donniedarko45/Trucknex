@@ -30,7 +30,7 @@ Deploy `dist/` as a static site. Configure the host to serve `index.html` for un
 - About: company concept, values, and logistics story.
 - Contact: validated form, booking context handoff, and explicit demo submission feedback.
 - Track: sample shipment `TNX12345` (also accepts `TNX-12345`), milestone timeline, and empty/not-found states. Direct links support `/track?id=TNX12345`.
-- Motion studio: `/motion-study` has Play/Pause, Restart, frame scrubbing, and 0.25× / 0.5× / 1× playback. The homepage runs the same illustration with a visible pause control.
+- Motion studio: `/motion-study` has Play/Pause, Restart, frame scrubbing, and 0.25× / 0.5× / 1× playback. The homepage runs the same illustration automatically.
 - Immediate responsive navigation, keyboard-operable Base UI dialogs and accordions, focus handling, and reduced-motion support.
 
 This is a complete frontend concept. Truck availability, ratings, prices, coverage figures, and shipment data are illustrative. Forms do not send or persist messages. Real bookings, live tracking, subscriptions, and contact delivery require backend integrations.

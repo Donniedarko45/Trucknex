@@ -104,8 +104,8 @@ Original UI: click starts a single sequence; source JS resets its class after
 
 Study page: click/play starts, stops at the final frame, and supports explicit
 pause/restart/scrub and 0.25×/0.5×/1×. Initial idle is preserved for matching clip
-timestamps. Homepage: the same sequence may run as a labelled illustrative loop,
-with a visible pause control. Playback pauses offscreen and in a hidden tab.
+timestamps. Homepage: the same sequence runs as an automatic illustrative loop.
+Playback pauses offscreen and in a hidden tab.
 These two modes deliberately distinguish the original trigger from live marketing
 presentation. Functional booking controls remain immediate.
 

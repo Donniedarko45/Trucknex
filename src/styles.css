@@ -532,7 +532,6 @@ a svg {
 }
 .dispatch-loading-pose {
   width: 100%;
-  padding-bottom: 38px;
 }
 .dispatch-loading-pose::before {
   content: "";
@@ -540,11 +539,6 @@ a svg {
   aspect-ratio: 240 / 63;
   border-radius: 40px;
   background: var(--ink);
-}
-@media (pointer: coarse) {
-  .dispatch-loading-pose {
-    padding-bottom: 50px;
-  }
 }
 .motion-study-loading {
   min-height: 100vh;

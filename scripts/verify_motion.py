@@ -304,11 +304,6 @@ def homepage_test(browser, url: str) -> list[dict]:
     animation.scroll_into_view_if_needed()
     page.wait_for_function("document.querySelector('[data-testid=dispatch-animation]').dataset.playing === 'true'")
     results = [{"check": "Homepage illustrative sequence auto-plays when visible", "passed": True, "detail": "Visible data-playing=true"}]
-    page.get_by_role("button", name="Pause animation", exact=True).click()
-    wait_render(page)
-    results.append({"check": "Homepage visible Pause control stops playback", "passed": animation.get_attribute("data-playing") == "false", "detail": ""})
-    page.get_by_role("button", name="Play animation", exact=True).click()
-    page.wait_for_function("document.querySelector('[data-testid=dispatch-animation]').dataset.playing === 'true'")
     page.evaluate("window.scrollTo(0,document.documentElement.scrollHeight)")
     page.wait_for_timeout(150)
     results.append({"check": "Homepage playback suspends offscreen", "passed": animation.get_attribute("data-playing") == "false", "detail": "IntersectionObserver state after scrolling to footer"})

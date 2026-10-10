@@ -78,6 +78,8 @@ def main() -> None:
             })""", timestamp)
             page.screenshot(path=str(output / f"frame_{number:04d}.png"))
         browser.close()
+    # Every frame is now a direct capture; drop the verifier's extraction log.
+    (output / "extracted_frames.json").unlink(missing_ok=True)
 
     subprocess.run([
         "ffmpeg", "-y", "-loglevel", "error", "-framerate", "30",

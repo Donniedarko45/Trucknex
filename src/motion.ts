@@ -21,6 +21,8 @@ export const MOTION = {
   road: { y: 30, dashWidth: 6, pitch: 15, height: 2.1, count: 24 },
   upperDoor: { x: 2, y: 5, width: 20, height: 2 },
   lowerDoor: { x: 2, y: 36, width: 20, height: 2 },
+  /** Measured from reference frame 181: cone flares away from the road line. */
+  beam: { length: 33, root: 2.8, outer: 13.6, inner: 9.7 },
   label: { x: 120, y: 19, height: 24, size: 16 },
   stages: [
     { time: 0, label: "Ready to move" },

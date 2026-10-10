@@ -5,7 +5,6 @@ import {
   ArrowUpRight,
   ArrowRight,
   ChevronDown,
-  Clock3,
   Headphones,
   MapPin,
   Package,
@@ -14,6 +13,8 @@ import {
   Truck,
 } from "lucide-react";
 import BookingWidget from "../components/BookingWidget";
+import FreightMap from "../components/network/FreightMap";
+import { CORRIDORS } from "../components/network/networkData";
 
 const DispatchAnimation = lazy(
   () => import("../components/dispatch/DispatchAnimation"),
@@ -39,136 +40,6 @@ const questions = [
     "Absolutely. Explore the transporter experience on our solutions page, then contact us with your fleet size and preferred routes to preview a partnership inquiry.",
   ],
 ];
-const lanes = [
-  {
-    from: "Delhi",
-    to: "Mumbai",
-    km: "1,420 km",
-    days: "2–3 days",
-    x1: 225,
-    y1: 145,
-    x2: 148,
-    y2: 289,
-  },
-  {
-    from: "Mumbai",
-    to: "Bengaluru",
-    km: "980 km",
-    days: "1–2 days",
-    x1: 148,
-    y1: 289,
-    x2: 224,
-    y2: 393,
-  },
-  {
-    from: "Delhi",
-    to: "Kolkata",
-    km: "1,530 km",
-    days: "2–3 days",
-    x1: 225,
-    y1: 145,
-    x2: 342,
-    y2: 222,
-  },
-];
-
-function FreightMap({ selected }: { selected: number }) {
-  const lane = lanes[selected];
-  return (
-    <div className="freight-map">
-      <div className="map-utility">
-        <span className="status-dot" /> CONNECTED ACROSS INDIA{" "}
-        <span>TNX / NETWORK</span>
-      </div>
-      <svg
-        viewBox="0 0 500 500"
-        role="img"
-        aria-label={`Illustrative India network showing ${lane.from} to ${lane.to}`}
-      >
-        <defs>
-          <pattern
-            id="tnx-map-pattern"
-            width="8"
-            height="8"
-            patternUnits="userSpaceOnUse"
-          >
-            <circle cx="2" cy="2" r="1.3" fill="#666660" />
-          </pattern>
-        </defs>
-        <path
-          d="M188 31l23 15 25-3 13 19 26-8 8 29-20 20 11 25 36 10 15 22 37-5 28 16 38-15 22 11-6 21-39 10-5 23-19 8-26-9-30 15-9 30-33 27-17 52-20 33-19 58-20 40-12 37-14-2-7-29-19-25-14-33-16-27-5-39-25-39-17-37-34-7-25-30-33-13 2-22 31 4 23-18 1-24 27-21 12-22 21-9-11-22 7-29-13-16 12-30z"
-          fill="url(#tnx-map-pattern)"
-          stroke="#696960"
-          strokeWidth=".6"
-        />
-        <g fill="none" stroke="#606058" strokeWidth="1">
-          <path d="M225 145Q94 216 148 289Q198 336 224 393" />
-          <path d="M225 145Q284 165 342 222Q290 266 224 320Q253 352 262 390" />
-        </g>
-        <path
-          d={`M${lane.x1} ${lane.y1} Q${(lane.x1 + lane.x2) / 2 + 50} ${(lane.y1 + lane.y2) / 2} ${lane.x2} ${lane.y2}`}
-          stroke="#ff7542"
-          fill="none"
-          strokeWidth="2"
-          strokeDasharray="5 5"
-        />
-        {[
-          [225, 145, "Delhi"],
-          [148, 289, "Mumbai"],
-          [224, 393, "Bengaluru"],
-          [342, 222, "Kolkata"],
-          [262, 390, "Chennai"],
-          [224, 320, "Hyderabad"],
-        ].map(([x, y, name]) => (
-          <g key={name}>
-            <circle cx={x} cy={y} r="4" fill="#ff7542" />
-            <text
-              x={Number(x) + 10}
-              y={Number(y) + 4}
-              fill="#d6d5cd"
-              fontSize="11"
-              fontFamily="Geist"
-            >
-              {name}
-            </text>
-          </g>
-        ))}
-        <circle
-          cx={lane.x1}
-          cy={lane.y1}
-          r="10"
-          fill="#f15a24"
-          fillOpacity=".2"
-        />
-        <circle
-          cx={lane.x2}
-          cy={lane.y2}
-          r="10"
-          fill="#f15a24"
-          fillOpacity=".2"
-        />
-      </svg>
-      <div className="network-map-card">
-        <div>
-          <Route size={17} />
-          <span>EXPLORE A CORRIDOR</span>
-        </div>
-        <strong>
-          {lane.from} <ArrowRight size={20} /> {lane.to}
-        </strong>
-        <p>
-          <span>{lane.km}</span>
-          <span>
-            <Clock3 size={13} />
-            {lane.days}
-          </span>
-          <span className="demo-tag">Sample route</span>
-        </p>
-      </div>
-    </div>
-  );
-}
-
 export default function HomePage() {
   const [playIntroduction] = useState(() => !introductionSeen);
   useEffect(() => {
@@ -205,7 +76,7 @@ export default function HomePage() {
           </h1>
           <p>
             The right truck. The right connection.
-            <br />A simpler way to move your business across India.
+            {" "}<br />A simpler way to move your business across India.
           </p>
           <div className="hero-actions">
             <a href="#get-moving" className="button button-dark">
@@ -227,7 +98,7 @@ export default function HomePage() {
             </div>
             <p>
               Built for the businesses
-              <br />
+              {" "}<br />
               <strong>that keep India moving.</strong>
             </p>
           </div>
@@ -308,13 +179,13 @@ export default function HomePage() {
             <span className="eyebrow">01 / BUILT AROUND YOUR BUSINESS</span>
             <h2>
               One platform.
-              <br />
+              {" "}<br />
               Every kind of move.
             </h2>
           </div>
           <p>
             From your first shipment to your next growth chapter,
-            <br />
+            {" "}<br />
             find a solution that fits where you’re going.
           </p>
         </div>
@@ -338,7 +209,7 @@ export default function HomePage() {
               <h3>Full truckload</h3>
               <p>
                 A dedicated vehicle for bigger loads.
-                <br />
+                {" "}<br />
                 Straightforward. Reliable. All yours.
               </p>
               <span className="service-action">
@@ -364,7 +235,7 @@ export default function HomePage() {
               <h3>Part truckload</h3>
               <p>
                 Smaller shipments. The same attention.
-                <br />A smarter use of space and spend.
+                {" "}<br />A smarter use of space and spend.
               </p>
               <span className="service-action">
                 Explore PTL <ArrowUpRight size={18} />
@@ -396,7 +267,7 @@ export default function HomePage() {
               <h3>Enterprise logistics</h3>
               <p>
                 A connected solution for your supply chain.
-                <br />
+                {" "}<br />
                 Designed around how you do business.
               </p>
               <span className="service-action">
@@ -414,7 +285,7 @@ export default function HomePage() {
             </span>
             <h2>
               A bigger network.
-              <br />
+              {" "}<br />
               <span>A closer connection.</span>
             </h2>
             <p>
@@ -426,14 +297,17 @@ export default function HomePage() {
               className="home-lane-options"
               aria-label="Explore illustrative routes"
             >
-              {lanes.map((lane, index) => (
+              {CORRIDORS.map((corridor, index) => (
                 <button
-                  key={lane.to}
+                  key={corridor.id}
+                  type="button"
                   onClick={() => setSelectedLane(index)}
                   aria-pressed={selectedLane === index}
                   className={selectedLane === index ? "active" : ""}
                 >
-                  {lane.from} <ArrowRight size={13} /> {lane.to}
+                  {corridor.from} <ArrowRight size={13} aria-hidden="true" />
+                  <span className="sr-only"> to </span>
+                  {corridor.to}
                 </button>
               ))}
             </div>
@@ -441,7 +315,8 @@ export default function HomePage() {
               Explore the network <ArrowUpRight size={18} />
             </Link>
             <small>
-              Illustrative corridors. Explore the network for more detail.
+              Approximate road distances and typical full-truckload transit
+              times. Actual times vary with load, permits and stops.
             </small>
           </div>
           <FreightMap selected={selectedLane} />
@@ -453,7 +328,7 @@ export default function HomePage() {
             <span className="eyebrow">03 / FROM COMPLEX TO CONNECTED</span>
             <h2>
               Less to manage.
-              <br />
+              {" "}<br />
               More to look forward to.
             </h2>
           </div>
@@ -509,7 +384,7 @@ export default function HomePage() {
           <span className="eyebrow">04 / TECHNOLOGY MEETS REAL LIFE</span>
           <h2>
             Behind every load,
-            <br />
+            {" "}<br />
             there’s a <span>person.</span>
           </h2>
           <p>
@@ -531,12 +406,12 @@ export default function HomePage() {
           <span className="eyebrow">05 / BEFORE YOU GO</span>
           <h2>
             A little more
-            <br />
+            {" "}<br />
             clarity.
           </h2>
           <p>
             Something else on your mind?
-            <br />
+            {" "}<br />
             <Link to="/contact">
               Ask us anything <ArrowUpRight size={15} />
             </Link>
@@ -578,7 +453,7 @@ export default function HomePage() {
           <span className="eyebrow">YOUR NEXT CHAPTER, CONNECTED.</span>
           <h2>
             Let’s make
-            <br />
+            {" "}<br />
             your next <span>move.</span>
           </h2>
           <Link to="/contact" className="button button-dark">

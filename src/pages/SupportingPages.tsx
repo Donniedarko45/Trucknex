@@ -75,7 +75,7 @@ function PageHero({
             <div className="eyebrow">{eyebrow}</div>
             <h1>
               {title}
-              <br />
+              {" "}<br />
               <span>{accent}</span>
             </h1>
           </div>
@@ -513,7 +513,7 @@ export function NetworkPage() {
           <div className="eyebrow">OUR CONNECTED CITIES</div>
           <h2 className="section-title">
             Pick a city. Find your
-            <br />
+            {" "}<br />
             destination.
           </h2>
           <p className="sub-description">
@@ -640,7 +640,7 @@ export function AboutPage() {
             </span>
             <div>
               The work behind the journey.
-              <br />
+              {" "}<br />
               <strong>People. Precision. Progress.</strong>
             </div>
           </div>
@@ -649,7 +649,7 @@ export function AboutPage() {
           <div className="eyebrow">WHY WE’RE HERE</div>
           <h2 className="section-title">
             A big country.
-            <br />A shared purpose.
+            {" "}<br />A shared purpose.
           </h2>
           <p>
             Behind every shipment is someone counting on it. A business taking
@@ -719,9 +719,9 @@ export function AboutPage() {
           <span className="sub-quote-mark">“</span>
           <h2>
             Progress isn’t a destination.
-            <br />
+            {" "}<br />
             It’s what we make possible
-            <br />
+            {" "}<br />
             <span>for each other.</span>
           </h2>
           <p>THE TRUCKNEX BELIEF</p>
@@ -813,7 +813,7 @@ export function ContactPage() {
           <div className="eyebrow">LET’S CONNECT</div>
           <h2 className="section-title">
             Your next move.
-            <br />
+            {" "}<br />
             Starts here.
           </h2>
           <p className="sub-description">
@@ -829,7 +829,7 @@ export function ContactPage() {
               <h3>Start with a hello.</h3>
               <p>
                 Use the form to explore partnerships,
-                <br />
+                {" "}<br />
                 transport needs or a new idea.
               </p>
             </div>
@@ -843,7 +843,7 @@ export function ContactPage() {
               <h3>India. Every direction.</h3>
               <p>
                 Connecting businesses and transport
-                <br />
+                {" "}<br />
                 partners across the country.
               </p>
             </div>
@@ -867,7 +867,7 @@ export function ContactPage() {
               </div>
               <h2>
                 Your next move
-                <br />
+                {" "}<br />
                 looks promising.
               </h2>
               <p>
@@ -990,7 +990,7 @@ export function ContactPage() {
               <div className="sub-form-footer">
                 <p>
                   Preview your next move.
-                  <br />
+                  {" "}<br />
                   This form is a demo.
                 </p>
                 <button className="button button-primary" type="submit">

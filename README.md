@@ -7,11 +7,11 @@ An original, responsive logistics website concept built with React, TypeScript, 
 Requires Node.js 22.12+ (Node.js 24 was validated).
 
 ```sh
-npm ci --cache /workspace/.cache/npm --no-audit --no-fund
+npm ci
 npm run dev -- --port 5173 --strictPort
 ```
 
-For machines outside the cloud workspace, omit the `--cache` argument or supply a writable local cache directory.
+The dispatch animation study is at `http://localhost:5173/motion-study`.
 
 ## Production
 
@@ -56,15 +56,15 @@ Start the development server, then run:
 
 ```sh
 python -m pip install playwright pillow
-# Install Chromium and FFmpeg using your system package manager if needed.
+python -m playwright install --with-deps chromium
 python scripts/verify_motion.py --url http://127.0.0.1:5173
 ```
 
-The verifier uses `/usr/bin/chromium` in this cloud environment. Its `--help` lists browser overrides. It captures 14 matching reference timestamps, saves labelled side-by-side pairs to `compare/`, checks geometry, controls, responsive widths and reduced motion, and records browser frame scheduling. Missing ignored reference PNGs are extracted from the committed source clip using FFmpeg.
+The verifier uses a system `chromium` if one is on `PATH`, otherwise Playwright's own browser; `--chromium /path/to/browser` overrides both. FFmpeg must be on `PATH` only when `reference/frame_*.png` is missing, to extract the frames from `reference/source.mp4`. It captures 14 matching reference timestamps, saves labelled side-by-side pairs to `compare/`, checks geometry, controls, responsive widths and reduced motion, and records browser frame scheduling. Missing ignored reference PNGs are extracted from the committed source clip using FFmpeg.
 
 [compare/REPORT.md](compare/REPORT.md) documents the differences found and fixed, measured errors, and remaining limits. Trailer positions match the independent source timeline within 0.05 px; visible raster edges differ by less than 0.5 px. The tested Chromium trace scheduled at 60 Hz with no long tasks. Physical-device performance is not measured.
 
-Deliberate visual differences are the warm background, orange cab, original Trucknex truck/carton/check artwork, and Geist journey copy. The check and headlight shapes differ slightly while following the source timing. The studio holds completion; the homepage explicitly loops. There is no source mobile recording, so mobile uses uniform scaling.
+Deliberate visual differences are the warm background, orange cab, original Trucknex truck/carton/check artwork, and Geist journey copy. The check shape differs slightly while following the source timing. Headlight beams are our own cones with the reference's measured length, flare and fade; only the gradient falloff in the faint tail differs. The studio holds completion; the homepage explicitly loops. There is no source mobile recording, so mobile uses uniform scaling.
 
 To regenerate the independent reference capture:
 
@@ -79,6 +79,8 @@ This captures upstream source, not the reconstruction. The published GIF has var
 ## Local assets
 
 Fonts are bundled from `@fontsource/geist` and `@fontsource/geist-mono`. Photographs are bundled locally, so the website requires no external asset requests at runtime.
+
+India map outline: official boundary of India (Survey of India) from [datameet/maps](https://github.com/datameet/maps) `Country/india-composite.geojson`, CC-0. `scripts/build_india_outline.py` regenerates the simplified `src/components/network/indiaOutline.ts`. Homepage corridor distances and transit times in `src/components/network/networkData.ts` are approximate and should be confirmed against operations data.
 
 Photographic sources (Unsplash):
 

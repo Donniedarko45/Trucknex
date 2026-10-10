@@ -19,20 +19,20 @@
     "published_gif": "original.gif"
   },
   "referenceFrameOrigins": {
-    "1": "Independent source-browser PNG capture",
-    "37": "Independent source-browser PNG capture",
-    "46": "Independent source-browser PNG capture",
-    "61": "Independent source-browser PNG capture",
-    "76": "Independent source-browser PNG capture",
-    "106": "Independent source-browser PNG capture",
-    "151": "Independent source-browser PNG capture",
-    "181": "Independent source-browser PNG capture",
-    "211": "Independent source-browser PNG capture",
-    "226": "Independent source-browser PNG capture",
-    "245": "Independent source-browser PNG capture",
-    "250": "Independent source-browser PNG capture",
-    "255": "Independent source-browser PNG capture",
-    "262": "Independent source-browser PNG capture"
+    "1": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "37": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "46": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "61": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "76": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "106": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "151": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "181": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "211": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "226": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "245": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "250": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "255": "Extracted from independently recorded source.mp4 (H.264/YUV)",
+    "262": "Extracted from independently recorded source.mp4 (H.264/YUV)"
   },
   "frames": [
     {
@@ -158,7 +158,7 @@
       "referenceTrailerPaint": {
         "x": 583,
         "y": 180,
-        "visible_width": 52
+        "visible_width": 55
       },
       "referenceParcelPaint": null,
       "trailerSourceErrorPx": 0.027395709224038,
@@ -378,13 +378,13 @@
         "checkOpacity": 0
       },
       "referenceTrailerPaint": {
-        "x": 351,
+        "x": 354,
         "y": 181,
-        "visible_width": 105
+        "visible_width": 102
       },
       "referenceParcelPaint": null,
       "trailerSourceErrorPx": 0,
-      "trailerPaintErrorPx": 0,
+      "trailerPaintErrorPx": -3,
       "parcelSourceErrorPx": 0.01393690581210194,
       "upperDoorHingeErrorPx": 0.0,
       "lowerDoorHingeErrorPx": 0.0,
@@ -596,7 +596,7 @@
       "referenceTrailerPaint": {
         "x": 288,
         "y": 181,
-        "visible_width": 104
+        "visible_width": 102
       },
       "referenceParcelPaint": null,
       "trailerSourceErrorPx": 0.02673650116025783,
@@ -1059,7 +1059,7 @@
     {
       "check": "Playback speed 0.5\u00d7",
       "passed": true,
-      "detail": "advanced 250.0 ms in 500.3 ms browser time; drift 0.1 ms (1 ms range step; quantization \u00b10.5 ms)"
+      "detail": "advanced 251.0 ms in 500.4 ms browser time; drift 0.8 ms (1 ms range step; quantization \u00b10.5 ms)"
     },
     {
       "check": "Playback speed 1\u00d7",
@@ -1069,7 +1069,7 @@
     {
       "check": "Restart returns to initial phase",
       "passed": true,
-      "detail": "time=51 ms"
+      "detail": "time=50 ms"
     },
     {
       "check": "Play advances shared clock",
@@ -1080,11 +1080,6 @@
       "check": "Homepage illustrative sequence auto-plays when visible",
       "passed": true,
       "detail": "Visible data-playing=true"
-    },
-    {
-      "check": "Homepage visible Pause control stops playback",
-      "passed": true,
-      "detail": ""
     },
     {
       "check": "Homepage playback suspends offscreen",
@@ -1147,12 +1142,12 @@
   },
   "performance": {
     "longTasks": [],
-    "elapsed": 9016.3,
+    "elapsed": 9016.300000000001,
     "samples": 541,
-    "meanIntervalMs": 16.665988909426986,
+    "meanIntervalMs": 16.66598890942699,
     "medianIntervalMs": 16.699999999999818,
-    "p95IntervalMs": 16.799999999999727,
-    "rafRateHz": 60.00244002528754,
+    "p95IntervalMs": 16.700000000000728,
+    "rafRateHz": 60.00244002528753,
     "intervalsOver25Ms": 0,
     "maxIntervalMs": 16.80000000000109,
     "scope": "Headless Chromium on this machine; rAF scheduling and main-thread long tasks, not a physical-device GPU benchmark."

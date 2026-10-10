@@ -196,20 +196,23 @@ export function Headlights({ clock }: ElementProps) {
     (time) => `scaleX(${sampleTrack(time, TRACKS.lightScale)})`,
   );
 
+  const { length, root, outer, inner } = MOTION.beam;
   return (
     <g data-motion-element="headlights">
       <defs>
         <linearGradient id={gradient} x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stopColor="#f5dc77" stopOpacity=".9" />
-          <stop offset="1" stopColor="#f5dc77" stopOpacity="0" />
+          <stop offset="0" stopColor="#f5dc77" stopOpacity=".8" />
+          <stop offset=".55" stopColor="#f5dc77" stopOpacity=".22" />
+          <stop offset="1" stopColor="#f5dc77" stopOpacity=".05" />
         </linearGradient>
       </defs>
-      {[4, 29].map((y) => (
+      {[4, 29].map((y, index) => (
         <g key={y} transform={`translate(83 ${y})`}>
           <rect x=".6" width="2.4" height="8" rx="1" fill="#f5dc77" />
-          <g transform="translate(3 4)">
+          {/* The lower beam mirrors the upper one so both flare outward. */}
+          <g transform={`translate(3 4) scale(1 ${index ? -1 : 1})`}>
             <motion.path
-              d="M0-2 8-4V4L0 2Z"
+              d={`M0 ${-root} ${length} ${-outer}V${inner}L0 ${root}Z`}
               fill={`url(#${gradient})`}
               style={{ ...svgOrigin, opacity, transform }}
             />

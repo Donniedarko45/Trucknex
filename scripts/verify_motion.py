@@ -358,6 +358,7 @@ def write_report(report: dict) -> None:
         f"Across the {len(geometry)} poses, maximum parcel-anchor difference is {max(abs(frame['parcelSourceErrorPx']) for frame in geometry):.4f} px; maximum door-hinge difference is {max(frame[key] for frame in geometry for key in ('upperDoorHingeErrorPx', 'lowerDoorHingeErrorPx')):.4f} px; maximum door-angle difference is {max(abs(frame[key]) for frame in geometry for key in ('upperDoorAngleErrorDeg', 'lowerDoorAngleErrorDeg')):.4f}°. Maximum opacity difference is {max(abs(value) for frame in geometry for value in frame['opacityErrors'].values()):.5f}. Normalized check reveal progress differs by at most {max(abs(frame['checkProgressError']) for frame in geometry):.5f} from the source timing curve.", "",
         "## Visual comparison and correction", "",
         f"The first capture pass showed the truck and parcel aligned, but both loading doors were missing. Motion's SVG renderer had written a 50% transform origin, placing the hinges outside the clipping region. The element origin was made explicitly (0,0), then all {len(geometry)} reference pairs were captured again and hinge/angle checks added. The paused dev-panel readout was also synchronized to the shared clock; playback rates are measured within the browser to exclude test-driver command delays. An extra completion frame exposed a round-cap dot from a zero-length check path before its start time; the check is now hidden until its reveal begins, and all final pairs were recaptured.", "",
+        "A later visual pass of frames 151, 181 and 211 showed our headlight beams were about a quarter of the reference length (8 vs ~33 scene units) and did not flare, which the anchor metrics cannot see. The beam was redrawn to the measured footprint (`MOTION.beam`: 33 units long, 5.6 units at the lamp, flaring outward to ~23 units, faint hard-edged tail) and the pairs were recaptured.", "",
         "## Controls and responsive checks", "",
     ]
     for control in report["controls"]:
@@ -373,7 +374,7 @@ def write_report(report: dict) -> None:
         performance["scope"], "",
         "## Deliberate differences and remaining limits", "",
         "- Warm-neutral background, ink pill, signal-orange cab, original Trucknex trailer/carton/check, and local Geist text replace the reference's original palette, text and artwork. Pixel-level colour/glyph differences are intentional.",
-        "- Headlight beam artwork is our own vector trapezoid rather than the source's perspective CSS surface; its timing, opacity and position follow the source.",
+        "- Headlight beams are our own vector cones rather than the source's perspective CSS surface. Length, flare and fade were matched to frame 181; gradient falloff differs slightly in the faint tail.",
         "- The original check uses a fixed 16-pixel dash offset; our original check path uses normalized path length. Both follow the same 300 ms easing and trigger, with a slightly different initial stroke reveal because the paths differ.",
         "- The app holds completion and offers explicit controls; the upstream JavaScript's later class reset is excluded from the captured primary sequence and documented in the spec.",
         "- Mobile adaptation preserves the SVG aspect ratio. There is no original mobile recording to compare against.",
@@ -383,8 +384,17 @@ def write_report(report: dict) -> None:
     (COMPARE / "REPORT.md").write_text("\n".join(lines))
 
 
+EXTRACTED_LOG = REFERENCE / "extracted_frames.json"
+EXTRACTED_ORIGIN = "Extracted from independently recorded source.mp4 (H.264/YUV)"
+
+
 def ensure_reference_frames(keyframes: list[int]) -> dict:
-    origins = {str(frame): "Independent source-browser PNG capture" for frame in keyframes}
+    """Extracted frames are logged so later runs keep reporting their true origin."""
+    extracted = set(json.loads(EXTRACTED_LOG.read_text())) if EXTRACTED_LOG.is_file() else set()
+    origins = {
+        str(frame): EXTRACTED_ORIGIN if frame in extracted else "Independent source-browser PNG capture"
+        for frame in keyframes
+    }
     missing = [frame for frame in keyframes if not (REFERENCE / f"frame_{frame:04d}.png").is_file()]
     if not missing:
         return origins
@@ -398,14 +408,17 @@ def ensure_reference_frames(keyframes: list[int]) -> dict:
         for frame in missing:
             name = f"frame_{frame:04d}.png"
             shutil.copyfile(Path(temporary) / name, REFERENCE / name)
-            origins[str(frame)] = "Extracted from independently recorded source.mp4 (H.264/YUV)"
+            origins[str(frame)] = EXTRACTED_ORIGIN
+            extracted.add(frame)
+    EXTRACTED_LOG.write_text(json.dumps(sorted(extracted)) + "\n")
     return origins
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--url", default="http://127.0.0.1:5173")
-    parser.add_argument("--chromium", default="/usr/bin/chromium")
+    parser.add_argument("--chromium", default=shutil.which("chromium"),
+                        help="Browser executable; defaults to system chromium, else Playwright's own")
     parser.add_argument("--captures-only", action="store_true")
     args = parser.parse_args()
     COMPARE.mkdir(exist_ok=True)

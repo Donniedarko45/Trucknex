@@ -47,7 +47,7 @@ viewport centre because the published capture is cropped. The pill starts at
 | Lower loading door | Loading state | Hinge at trailer+(3.5,63); length35, thickness3.5 |
 | Parcel / packing seam | Cargo entering trailer | Initially (181.25,197.75), 36.75 square; own carton vector |
 | Two headlights | Departure state | Trailer x+145.25, y+7/y+50.75; 5.25 × 14 |
-| Two headlight beams | Motion direction | Ahead of cab; opacity + subtle scale |
+| Two headlight beams | Motion direction | Start at trailer x+149.5; ~58 px long; 10 px wide at the lamp, flaring outward to ~40 px; strong-to-faint fade with a hard far edge (measured on frame 181). Own vector cone, `MOTION.beam` |
 | Road dashes | Relative road movement | Starts at x638, y213.5; dash10.5, pitch26.25, visible height3.675 |
 | Confirmation tick | Final confirmation | 21 × 17.5 beside centred success copy; own check path |
 | Cursor and pressed pill in GIF | Recording / interaction artifact | Cursor excluded; human trigger press remains ordinary feedback |

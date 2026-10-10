@@ -73,7 +73,7 @@ function Header() {
             <ScanLine size={17} />
             Track a shipment
           </Link>
-          <Link to="/contact" className="button button-dark header-cta">
+          <Link to="/contact" className="button button-dark button-sm header-cta">
             Let’s get moving <ArrowUpRight size={17} />
           </Link>
         </div>
@@ -125,7 +125,7 @@ function Footer() {
             <Brand light />
             <h2>
               Built for
-              <br />
+              {" "}<br />
               what’s next.
             </h2>
             <span className="footer-made">
@@ -203,7 +203,7 @@ function NotFound() {
       <span className="eyebrow">404 / A SMALL DETOUR</span>
       <h1>
         Back to
-        <br />
+        {" "}<br />
         the right road.
       </h1>
       <p>This page doesn’t exist. Let’s find your next move.</p>

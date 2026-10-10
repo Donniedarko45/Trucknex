@@ -11,5 +11,6 @@ dist/
 
 # Reproducible frame extraction; retain the clip, provenance, and comparisons.
 reference/frame_*.png
+reference/extracted_frames.json
 
 __pycache__/
